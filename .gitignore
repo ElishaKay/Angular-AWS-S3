@@ -1,0 +1,6 @@
+.DS_Store
+node_modules
+
+# API keys and secrets
+.env
+.env.example
