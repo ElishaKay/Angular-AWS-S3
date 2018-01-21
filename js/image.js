@@ -54,6 +54,7 @@
 							s3.accessKeyId = controller.s3.accessKeyId;
 							s3.secretAccessKey = controller.s3.secretAccessKey
 							s3.bucket = controller.s3.bucket;
+							s3.region = controller.s3.region;
 							AWS.config.update({ accessKeyId: s3.accessKeyId, secretAccessKey: s3.secretAccessKey });
 							AWS.config.region = controller.s3.region;
 							var bucket = new AWS.S3({ params: { Bucket: s3.bucket } });
@@ -69,7 +70,7 @@
 							  else {
 								// Upload Successfully Finished
 								console.log("Success!");
-								$timeout(function() {scope.image.dataURL = 'https://s3.amazonaws.com/' + s3.bucket + '/' + filename;}, 750);
+								$timeout(function() {scope.image.dataURL = 'https://s3.' + s3.region + '.amazonaws.com/' + s3.bucket + '/' + filename;}, 750);
 							  }
 							})
 							.on('httpUploadProgress',function(progress) {
