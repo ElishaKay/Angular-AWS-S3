@@ -32,7 +32,7 @@
 			vm.s3.accessKeyId = data.accessKeyId;
 			vm.s3.secretAccessKey = data.secretAccessKey;
 			vm.s3.bucket = data.bucket;
-			vm.s3.region = 'eu-central-1';
+			vm.s3.region = data.region;
 			console.log('Updated the AWS Access Codes: ',vm.s3)
 		})
 		.error(function(data){

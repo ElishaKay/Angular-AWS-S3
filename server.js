@@ -16,6 +16,7 @@ app.get('/s3creds',function(req,res){
     s3.accessKeyId = process.env.ACCESSKEYID;
     s3.secretAccessKey = process.env.SECRETACCESSKEY;
     s3.bucket = process.env.BUCKET;
+    s3.region = 'eu-central-1';
     res.json(s3); 
 });
 
