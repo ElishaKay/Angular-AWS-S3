@@ -38,6 +38,8 @@ If you want your images to be public by default:
 
 s3:ListBucket applies to the Bucket itself and so the Resource should be “Resource”: “arn:aws:s3:::posttestasset”</p>
 
+<a href="http://www.fuzzyinfo.com/cloud/aws/s3-bucket-policy-action-does-not-apply-to-any-resource-in-statement/">More info on this here.</a>
+
 ```bash
 {
     "Version": "2012-10-17",
