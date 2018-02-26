@@ -3,7 +3,7 @@
 	'use strict';
 
 	angular
-	.module('image-upload-example')
+	.module('KoalaCMS')
 	.directive('image', function($timeout, $filter) {
 		return {
 			restrict: 'EA',

@@ -3,7 +3,7 @@
 	'use strict';
 
 	angular
-	.module('image-upload-example')
+	.module('KoalaCMS')
 	.directive('ptImageUploader', function() {
 		return {
 			restrict: 'EA',
@@ -22,7 +22,7 @@
 	'use strict';
 
 	angular
-	.module('image-upload-example')
+	.module('KoalaCMS')
 	.controller('ptImageUploaderController', function($http, $location, $anchorScroll) {
 		var vm = this;
 		vm.s3 = {};

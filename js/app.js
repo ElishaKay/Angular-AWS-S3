@@ -2,6 +2,6 @@
 
 	'use strict';
 
-	angular.module('image-upload-example', ['ui.bootstrap']);
+	angular.module('KoalaCMS', ['ui.bootstrap']);
 
 })();
